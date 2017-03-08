@@ -1,24 +1,21 @@
 package com.ronhe.demo;
 import java.io.IOException;
 import java.io.InputStream;
-import java.text.SimpleDateFormat;
-import java.util.Arrays;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.Properties;
 
 import org.apache.commons.mail.EmailException;
 import org.apache.commons.mail.HtmlEmail;
-
-
 
 import com.ronhe.demo.entity.Mail;
 
 
 
 public class SendMail {
+	
+	public static void main(String[] args) {
 		
+	}
+	
 		public static Properties getProperties() throws IOException {
 			String path ="/commonTool/mailconfig.properties";
 			InputStream is = SendMail.class.getClassLoader().getResourceAsStream(path);
