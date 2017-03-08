@@ -9,7 +9,11 @@ import org.apache.commons.mail.HtmlEmail;
 import com.ronhe.demo.entity.Mail;
 
 
-
+/**
+ * 邮件发送
+ * @author rjc
+ *
+ */
 public class SendMail {
 	
 	public static void main(String[] args) {
@@ -17,7 +21,7 @@ public class SendMail {
 	}
 	
 		public static Properties getProperties() throws IOException {
-			String path ="/commonTool/mailconfig.properties";
+			String path ="mailconfig.properties";
 			InputStream is = SendMail.class.getClassLoader().getResourceAsStream(path);
 			Properties dbProps = new Properties();
 			dbProps.load(is);

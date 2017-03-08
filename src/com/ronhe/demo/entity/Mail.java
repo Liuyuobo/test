@@ -1,7 +1,11 @@
 package com.ronhe.demo.entity;
 
 import java.io.Serializable;  
-
+/**
+ * 邮件发送类
+ * @author rjc
+ *
+ */
 @SuppressWarnings("serial")  
 public class Mail implements Serializable {  
   
